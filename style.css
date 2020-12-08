@@ -198,7 +198,10 @@ section {
     max-width: 60px;
   }
 
-
+  .header__body {
+    position: fixed;
+    z-index: 3;
+  }
 
   .header__menu {
     position: fixed;
@@ -228,18 +231,18 @@ section {
     position: relative;
     width: 40px;
     height: 40px;
-    background: url(./images/menu.png);
+    background: url(../images/menu.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    z-index: 2;
+    z-index: 5;
   }
 
   .toggle.active {
     position: fixed;
     right: 40px;
-    background: url(./images/close.png);
+    background: url(../images/close.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
