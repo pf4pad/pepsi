@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Pepsi-cola</title>
+</head>
+
+<body>
+  <section class="section">
+    <div class="circle">
+    </div>
+    <header class="header__body">
+      <a href="#">
+        <img src="images/logo.png" alt="" class="header__logo">
+      </a>
+      <div class="toggle" onclick="toggleMenu()"></div>
+      <ul class="header__menu">
+        <li><a href="">VIEW PRODUCTS</a></li>
+        <li><a href="">NEWSLETTER</a></li>
+        <li><a href="">WHAT'S NEW</a></li>
+        <li><a href="">CONTACT US</a></li>
+      </ul>
+      <!-- /.header__menu -->
+
+      <!-- /.header__logo -->
+    </header>
+    <!-- /.header__body -->
+    <div class="content">
+      <div class="textBox">
+        <h2>
+          That's What<br><span>I Like <sup>®</sup></span>
+        </h2>
+        <p>Your beverage choices change by the day and sometimes by the hour. PepsiCo is there for you every sip of the
+          way. We
+          offer the variety of beverages you want, ingredients you trust, and package sizes that fit your lifestyle.
+
+          It's all about choice and finding the
+          match that's right for you.
+          FIND YOUR MATCH
+        </p>
+        <a href="">View all products</a>
+      </div>
+      <div class="imgBox">
+        <img src="images/pepsi001.png" class="pepsi">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li>
+        <img src="images/pepsi001.png" onclick="imgSlider('images/pepsi001.png');changeBgColor('#0062be')">
+      </li>
+      <li><img src="images/pepsi002.png" onclick="imgSlider('images/pepsi002.png');changeBgColor('#e60c2c')"></li>
+      <li><img src="images/pepsi003.png" onclick="imgSlider('images/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+    </ul>
+    <div class="sci">
+      <a href=""><img src="images/facebook.png" alt=""></a>
+      <a href=""><img src="images/instagram.png" alt=""></a>
+      <a href=""><img src="images/twitter.png" alt=""></a>
+    </div>
+
+  </section>
+  <script type="text/javascript">
+
+    function imgSlider(anything) {
+      document.querySelector('.pepsi').src = anything;
+    }
+
+    function changeBgColor(color) {
+      const sec = document.querySelector('.section');
+      sec.style.background = color;
+    }
+    function toggleMenu() {
+      const toggleMenu = document.querySelector('.toggle');
+      const header__menu = document.querySelector('.header__menu');
+      toggleMenu.classList.toggle('active');
+      header__menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+
+</html>
