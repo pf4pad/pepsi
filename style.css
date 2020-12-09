@@ -94,7 +94,6 @@ section {
   line-height: 1.5em;
   font-weight: 900;
   text-transform: uppercase;
-
   transition: 3s;
 
 }
@@ -132,16 +131,28 @@ section {
 }
 
 .imgBox {
+  position: relative;
   max-width: 600px;
-  display: flex;
   padding-right: 150px;
   margin-top: 50px;
-  justify-content: flex-end;
+
+
 }
 
+
+
 .imgBox img {
+
   max-width: 260px;
+
 }
+
+.imgBox img:hover {
+
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
 
 
 .thumb {
@@ -202,8 +213,13 @@ section {
 
   }
 
+  .circle {
+    display: none;
+  }
+
   .header__body {
     padding: 20px 40px;
+    background: #e51e2a;
   }
 
   .header__logo {
