@@ -94,7 +94,7 @@ section {
   line-height: 1.5em;
   font-weight: 900;
   text-transform: uppercase;
-
+  transition: 3s
 }
 
 .textBox h2:hover,
@@ -143,13 +143,13 @@ section {
 .imgBox img {
 
   max-width: 260px;
-
+  transition: 2s;
 }
 
 .imgBox img:hover {
 
   transform: rotate(180deg);
-  transition: 1s;
+  transition: 2s;
 }
 
 
